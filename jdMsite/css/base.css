@@ -1,0 +1,54 @@
+/*...rest....*/
+*,::before,::after{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #333333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*==============common  css*/
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    line-height:0;
+    /*隐藏单是站位*/
+    visibility: hidden;
+    clear: both;
+}
+[class^="icon_"]{
+    background-image: url("../images/sprites.png");
+    background-size: 200px 200px;
+}
+.m_r10 {
+    margin-right:10px;
+}
+.m_l10 {
+    margin-left:10px;
+}
